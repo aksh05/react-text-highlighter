@@ -1,15 +1,17 @@
 {
-  "name": "react-text-highlighter",
-  "version": "1.0.0",
-  "description": "The component searches for input(be it a regex or a string) and highlights it in the containing HTML",
+  "name": "react-highlight-textinput",
+  "version": "1.0.3",
+  "description": "The component searches for input(be it a regex or a string) and highlights it in the containing HTML. Just wrap your html with the component and it will work like a charm. :-)",
   "main": "index.js",
   "scripts": {
     "test": "jest"
   },
   "keywords": [
     "react",
-    "text-highlighting",
-    "search"
+    "highlight",
+    "text-highlight",
+    "search",
+    "highlighter"
   ],
   "author": "akshay sehgal",
   "license": "ISC",

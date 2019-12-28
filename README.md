@@ -1,10 +1,5 @@
 
 ## React Text Highlighter Plugin
-  **author : [Akshay sehgal](https://gitlab.infoedge.com/akshay.sehgal)**
-  <br />
-  **version** : 1.0.0
-  <br />
-  **created on** : 27/Sep/2018
  
  *The plugin takes a seach parameter as its input and highlights it in the containing html.*
 
