@@ -166,34 +166,34 @@ export default class TextHighlighter extends React.Component {
 
 
     render() {
-        /**Return children as it is if search props is missing */
-        if (!this.props.search) {
-            return this.props.children;
+        const {search, children} = this.props;
+        if (!search) {
+            return children;
         }
         let sRegex;
         /**If search prop is an Array then escape each value */
-        if (this.props.search instanceof Array) {
+        if (search instanceof Array) {
             const finalStr = this.props.search.map(search => this._escapeString(search)).join("|");
             sRegex = this._getSearchRegex(finalStr, true);
         } else {
-            sRegex = this._getSearchRegex(this.props.search, false);
+            sRegex = this._getSearchRegex(search, false);
         }
 
         /**
          * If childdren of TextHighlighter are not text elements then
          * parse the nodes first
          */
-        if (!this._isChildrenPrimitive(this.props.children)) {
-            if (React.Children.count(this.props.children) > 1) {
+        if (!this._isChildrenPrimitive(children)) {
+            if (React.Children.count(children) > 1) {
                 console.error("TextHighlighter must contain one wrapper element as a child");
                 return;
-            } else if (!React.isValidElement(this.props.children)) {
+            } else if (!React.isValidElement(children)) {
                 console.error("TextHighlighter does not contain valid react elements");
                 return;
             }
 
             /**the immediate child of TextHighlighter will be considered parent for parsed elements**/
-            const parentNode = this.props.children;
+            const parentNode = children;
             /**Parse and highlight search words in children */
             const parsedChildren = this._parseAndHighlight(parentNode.props.children, sRegex);
             /**Clone the parent element */
