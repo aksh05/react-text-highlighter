@@ -43,10 +43,11 @@ export default class TextHighlighter extends React.Component {
      * @return {JsxElement} 
      */
     _renderHighlighted(str, key) {
+        const {highlightClass, highlightStyle} = this.props;
         const props = {
             key,
-            className: this.props.highlightClass ? this.props.highlightClass : null,
-            style: !this.props.highlightClass ? this.props.highlightStyle : {}
+            className: highlightClass ? highlightClass : null,
+            style: !highlightClass ? highlightStyle : {}
         }
         const children = str;
         return React.createElement(this.props.highlightWrapElement, props, children);
