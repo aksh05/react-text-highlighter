@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Highlights first or all occurences of searched word should render successfuly with mandatory props 1`] = `ShallowWrapper {}`;

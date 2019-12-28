@@ -1,0 +1,28 @@
+{
+  "name": "react-text-highlighter",
+  "version": "1.0.0",
+  "description": "The component searches for input(be it a regex or a string) and highlights it in the containing HTML",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "react",
+    "text-highlighting",
+    "search"
+  ],
+  "author": "akshay sehgal",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/preset-env": "^7.7.7",
+    "babel-preset-react-app": "^9.1.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "jest": "^24.9.0",
+    "sinon": "^8.0.1"
+  },
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
+}
