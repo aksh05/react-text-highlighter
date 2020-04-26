@@ -91,8 +91,6 @@ You can change the styling of you highlighted texts by passing in cutom classes.
 <TextHighlighter search="hello" highlightClass="mycustomclass">Hello I am a basic example</TextHighlighter>
 ```
 
-You can explore more options in *Props & Methods* section above.
-
 
 
  
